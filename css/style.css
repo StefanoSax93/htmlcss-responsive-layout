@@ -17,9 +17,6 @@
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-
-    /* SOLO PER DEBUG */
-    border: 1px dashed red;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -53,10 +50,7 @@
 }
 
 .card {
-    /* SOLO PER DEBUG */
-    border: 1px solid red;
     border-radius: 1rem;
-    min-height: 100px;
     padding: 25px 15px;
 }
 
@@ -299,6 +293,9 @@ p {
     vertical-align: -3px;
 }
 .link-sm {
-    color: white;
     text-decoration: underline;
+}
+/* footer */
+footer {
+    background-color: #333333;
 }
