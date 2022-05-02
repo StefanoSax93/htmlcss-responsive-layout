@@ -79,6 +79,9 @@
 .color-tertiary {
     color: var(--color-tertiary);
 }
+.white {
+    color: white;
+}
 
 nav {
     width: 100%;
@@ -178,7 +181,6 @@ a {
 
 .card p {
     color: #5A6E7F;
-    font-size: 13.2px;
     font-weight: 600;
 }
 
@@ -206,10 +208,6 @@ p {
 
 .col-left {
     color: white;
-}
-
-.col-left p, .col-right p {
-    font-size: 14px;
 }
 
 .col-right {
@@ -281,4 +279,26 @@ p {
 }
 .fa-linkedin {
     margin-right: 5px;
+}
+/* sezione 6 */
+.justify-center {
+    justify-content: center;
+}
+.text-xs {
+    font-size: 13.2px;
+}
+.btn-white-lg {
+    display: inline-block;
+    background-color: white;
+    color: var(--color-primary);
+    padding: 20px 60px;
+    border-radius: 40px;
+}
+.point {
+    font-size: 25px;
+    vertical-align: -3px;
+}
+.link-sm {
+    color: white;
+    text-decoration: underline;
 }
