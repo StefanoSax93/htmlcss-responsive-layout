@@ -197,7 +197,9 @@ p {
 .img-70 {
     max-width: 70%;
 }
-
+.p-medium {
+    padding: 20px 50px;
+}
 .p-large {
     padding: 0 100px;
 }
@@ -251,6 +253,32 @@ p {
     padding: 30px 20px 37px 20px;
     font-size: 85%;
 }
-.number-card h1 {
+.bigger-h1 {
     font-size: 60px;
+}
+/* sezione 5 */
+.about-us {
+    padding: 0 35px;
+}
+.about-us img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.marks {
+    color: var(--color-primary);
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+.line-height-lg {
+    line-height: 35px;
+}
+.btn-purple-small {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+.fa-linkedin {
+    margin-right: 5px;
 }
