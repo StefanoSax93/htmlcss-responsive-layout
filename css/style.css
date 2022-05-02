@@ -72,6 +72,10 @@
     background-color: var(--color-secondary-light);
 }
 
+.color-primary {
+    color: var(--color-primary);
+}
+
 .color-tertiary {
     color: var(--color-tertiary);
 }
@@ -171,6 +175,9 @@ a {
     color: #5A6E7F;
     font-size: 13.2px;
     font-weight: 600;
+}
+
+p {
     line-height: 24px;
 }
 
@@ -196,7 +203,6 @@ a {
 
 .col-left p, .col-right p {
     font-size: 14px;
-    line-height: 23px;
 }
 
 .col-right {
@@ -216,4 +222,20 @@ a {
     background-color: var(--color-primary);
     color: black;
     line-height: 40px;
+}
+/* sezione 3 */
+.testimonial-box {
+    border-radius: 50px;
+    display: flex;
+    padding: 25px 15px 40px 15px;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+.testimonial-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
