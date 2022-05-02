@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Ubuntu;
 }
 
 :root {
@@ -13,7 +13,7 @@
 }
 
 .container {
-    width: 964px;
+    width: 968px;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -32,6 +32,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .col {
@@ -40,11 +41,11 @@
 }
 
 .col-1 {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 - 13.4px);
 }
 
 .col-2 {
-    flex-basis: calc((100% / 3) * 2);
+    flex-basis: calc(100% / 3 * 2 - 7px);
 }
 
 .col-3 {
@@ -56,6 +57,7 @@
     border: 1px solid red;
     border-radius: 1rem;
     min-height: 100px;
+    padding: 25px 15px;
 }
 
 .bg-primary {
@@ -86,7 +88,8 @@ nav .container {
     padding: 15px;
 }
 
-nav .row {
+nav .nav-row {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -94,11 +97,19 @@ nav .row {
 nav li {
     list-style: none;
     padding-left: 20px;
+    font-size: 15px;
+}
+
+nav img {
+    max-width: 80%;
 }
 
 li a {
-    text-decoration: none;
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn {
@@ -110,7 +121,51 @@ li a {
     background-color: white;
     color: black;
 }
+.btn-blue {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    display: block;
+    max-width: 67%;
+}
 
 .after-nav {
     margin-top: 50px;
+}
+
+.m-bottom-md {
+    margin-bottom: 25px;
+}
+
+.relative {
+    position: relative;
+}
+
+.phone {
+    position: absolute;
+    bottom: -5px;
+    right: 50px;
+}
+
+.phone img {
+    max-height: 240px;
+}
+
+.card h3, .card .fa-4x  {
+    color: var(--color-secondary);
+}
+
+.card h3 {
+    font-size: 17.5px;
+}
+
+.card p {
+    color: #5A6E7F;
+    font-size: 13.2px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.text-center {
+    text-align: center;
 }
