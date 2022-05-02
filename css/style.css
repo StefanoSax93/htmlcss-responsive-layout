@@ -133,8 +133,16 @@ a {
     margin-top: 50px;
 }
 
-.m-bottom-md {
+.m-bottom-sm {
     margin-bottom: 25px;
+}
+
+.m-bottom-md {
+    margin-bottom: 50px;
+}
+
+.m-bottom-lg {
+    margin-bottom: 100px;
 }
 
 .relative {
@@ -168,4 +176,44 @@ a {
 
 .text-center {
     text-align: center;
+}
+
+.img-100 {
+    max-width: 100%;
+}
+
+.img-70 {
+    max-width: 70%;
+}
+
+.p-large {
+    padding: 0 100px;
+}
+
+.col-left {
+    color: white;
+}
+
+.col-left p, .col-right p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.col-right {
+    align-self: flex-end;
+    padding: 0 25px;
+}
+.col-right-in {
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px 15px;
+}
+.circle-btn {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: black;
+    line-height: 40px;
 }
