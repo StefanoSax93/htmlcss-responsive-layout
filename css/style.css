@@ -10,6 +10,9 @@
     --color-secondary: #0084fd;
     --color-secondary-light: #b5ddff;
     --color-tertiary: #FDC15F;
+    --bp-sm: 580px;
+    --bp-md: 768px;
+    --bp-lg: 992px;
 }
 
 .container {
@@ -52,6 +55,7 @@
 .card {
     border-radius: 1rem;
     padding: 25px 15px;
+    min-height: 295px;
 }
 
 .bg-primary {
@@ -156,9 +160,9 @@ a {
 }
 
 .phone {
-    position: absolute;
-    bottom: -5px;
-    right: 50px;
+    align-self: center;
+    justify-self: flex-end;
+    transform: translatey(30px);
 }
 
 .phone img {
@@ -298,4 +302,43 @@ p {
 /* footer */
 footer {
     background-color: #333333;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: calc(var(--bp-md) - 1rem);
+    }
+    .col-md-half {
+        max-width: 50%;
+    }
+    .phone {
+        transform: translatey(40px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(var(--bp-sm));
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .col-lg-half {
+        flex-basis: calc(50% - 20px);
+    }
+    .change-direction {
+        flex-direction: column;
+    }
+    .card-half {
+        height: 460px;
+    }
+    .phone {
+        transform: translateY(-30px);
+    }
+    .col-md-full {
+        flex-basis: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    
 }
