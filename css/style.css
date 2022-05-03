@@ -313,9 +313,6 @@ footer {
     .container {
         width: calc(var(--bp-md) - 1rem);
     }
-    .col-md-half {
-        max-width: 50%;
-    }
     .phone {
         transform: translatey(40px);
     }
@@ -324,8 +321,8 @@ footer {
 @media screen and (max-width: 768px) {
     .container {
         width: calc(var(--bp-sm));
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     nav li {
         display: none;
@@ -335,6 +332,9 @@ footer {
     }
     .col-lg-half {
         flex-basis: calc(50% - 20px);
+    }
+    .col-md-half {
+        max-width: calc(50% - 20px);
     }
     .btn-blue {
         max-width: 55%;
@@ -353,6 +353,23 @@ footer {
         padding: 0;
         margin: 0;
         font-size: 20px;
+    }   
+}
+
+@media screen and (max-width:580px) {
+    .container {
+        max-width: 100%;
     }
-    
+    .col-sm-full {
+        min-width: 100% ;
+    }
+    .big-card-sm {
+        max-height: 437px;
+    }
+    .card-sm {
+        max-height: 250px;
+    }
+    .testimonial-box {
+        flex-direction: column;
+    }
 }
