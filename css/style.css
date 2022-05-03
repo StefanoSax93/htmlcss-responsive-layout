@@ -117,6 +117,11 @@ a {
     text-decoration: none;
 }
 
+.hamburger-menu {
+    color: white;
+    display: none;
+}
+
 .btn {
     border-radius: 20px;
     padding: 10px;
@@ -322,8 +327,17 @@ footer {
         padding-left: 0;
         padding-right: 0;
     }
+    nav li {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
     .col-lg-half {
         flex-basis: calc(50% - 20px);
+    }
+    .btn-blue {
+        max-width: 55%;
     }
     .change-direction {
         flex-direction: column;
